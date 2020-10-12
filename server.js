@@ -30,7 +30,7 @@ app.use(logger("dev"));
 
 app.use(routes);
 
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/development-project-3"
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/googlebooks"
 mongoose
   .connect(MONGODB_URI, { useNewUrlParser: true, useCreateIndex: true  })
   .then(() => console.log('MongoDB Connected...'))
